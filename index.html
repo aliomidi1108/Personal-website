@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A.O</title>
+    <link rel="stylesheet" href="./src/output.css" />
+    <link
+      rel="stylesheet"
+      href="./fontawesome-free-6.6.0-web/fontawesome-free-6.6.0-web/css/all.min.css"
+    />
+    <link rel="shortcut icon" href="./media/ao-high-resolution-logo-transparent.png">
+  </head>
+  <body class="">
+    <!--start menu-->
+    <header class="w-full justify-center pt-4 h-auto md:h-20 px-5 md:px-10 mx-auto flex flex-col md:flex-row md:items-center">
+      <div class="flex w-full justify-between items-center">
+        <!-- دکمه منوی موبایل -->
+        <button id="menu-toggle" class="md:hidden text-white focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+        <!-- لینک‌های سوشال مدیا برای موبایل و دسکتاپ -->
+        <ul class="flex gap-3 md:hidden items-center">
+          <li class="flex w-8 h-8 border border-white rounded-md transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-red-500 duration-300">
+            <a class="flex mx-auto items-center" href="#">
+              <i class="fa-brands fa-youtube w-4 h-4 text-white"></i>
+            </a>
+          </li>
+          <li class="flex w-8 h-8 border border-white rounded-md transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-blue-500 duration-300">
+            <a class="flex mx-auto items-center" href="#">
+              <i class="fa-brands fa-twitter w-4 h-4 text-white"></i>
+            </a>
+          </li>
+          <li class="flex w-8 h-8 border border-white rounded-md transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-blue-500 duration-300">
+            <a class="flex mx-auto items-center" href="#">
+              <i class="fa-brands fa-telegram w-4 h-4 text-white"></i>
+            </a>
+          </li>
+          <li class="flex w-8 h-8 border border-white rounded-md transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-fuchsia-500 duration-300">
+            <a class="flex mx-auto items-center" href="#">
+              <i class="fa-brands fa-instagram w-4 h-4 text-white"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    
+      <!-- ناوبری برای دسکتاپ -->
+      <nav class="hidden md:flex md:ml-72  flex-grow justify-center mt-4 md:mt-0">
+        <ul class="flex mx-auto justify-center text-center  text-white text-sm child:font-DanaBold child:inline-block child:transition-colors child-hover:text-red-500">
+          <li class="w-[85px]"><a href="#">صفحه اصلی</a></li>
+          <li class="w-[85px]"><a href="#khadamat">خدمات</a></li>
+          <li class="w-[85px]"><a href="#rezome">رزومه</a></li>
+          <li class="w-[85px]"><a href="#nemoone">نمونه کار</a></li>
+          <li class="w-[85px]"><a href="#blog">بلاگ</a></li>
+          <li class="w-[85px]"><a href="#tamas">تماس با من</a></li>
+        </ul>
+      </nav>
+    
+      <!-- لینک‌های سوشال مدیا برای دسکتاپ -->
+      <ul class="hidden md:mx-auto md:flex gap-3 items-center ml-10">
+        <li class="flex w-8 h-8 border border-white rounded-md transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-red-500 duration-300">
+          <a class="flex mx-auto items-center" href="#">
+            <i class="fa-brands fa-youtube w-4 h-4 text-white"></i>
+          </a>
+        </li>
+        <li class="flex w-8 h-8 border border-white rounded-md transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-blue-500 duration-300">
+          <a class="flex mx-auto items-center" href="#">
+            <i class="fa-brands fa-twitter w-4 h-4 text-white"></i>
+          </a>
+        </li>
+        <li class="flex w-8 h-8 border border-white rounded-md transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-blue-500 duration-300">
+          <a class="flex mx-auto items-center" href="#">
+            <i class="fa-brands fa-telegram w-4 h-4 text-white"></i>
+          </a>
+        </li>
+        <li class="flex w-8 h-8 border border-white rounded-md transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-fuchsia-500 duration-300">
+          <a class="flex mx-auto items-center" href="#">
+            <i class="fa-brands fa-instagram w-4 h-4 text-white"></i>
+          </a>
+        </li>
+      </ul>
+    
+      <!-- منوی موبایل -->
+      <div id="mobile-menu" class="md:hidden hidden">
+        <ul class="flex flex-col gap-2 text-white text-sm mt-2 child:font-DanaBold child:transition-colors child-hover:text-red-500">
+          <li><a href="#">صفحه اصلی</a></li>
+          <li><a href="#khadamat">خدمات</a></li>
+          <li><a href="#rezome">رزومه</a></li>
+          <li><a href="#nemoone">نمونه کار</a></li>
+          <li><a href="#blog">بلاگ</a></li>
+          <li><a href="#tamas">تماس با من</a></li>
+        </ul>
+      </div>
+    </header>
+    <!--end menu-->
+    <!--start title-->
+    <div class="w-full max-w-4xl mx-auto mt-16 flex flex-col items-center">  
+      <img  
+        class="rounded-full w-48 h-48 border-6 border-gray-300"  
+        src="./media/IMG_20240817_174131_068.jpg"  
+        alt="Welcome Image"  
+      />  
+      <div class="w-4/5 flex items-cent h-auto mt-5">  
+        <h3 class="flex mx-auto font-DanaBold text-3xl text-red-500 text-center ">  
+          به وب سایت من خوش آمدید  
+        </h3>  
+      </div>  
+      <div class="w-4/5 flex items-center h-a mt-5">  
+        <span class="font-DanaMedium text-lg text-white text-center">  
+          لورم لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با  
+          استفاده از طراحان گرافیک است،   
+          چاپگرها و متون بلکه روزنامه و مجله در  
+          ستون و سطرآنچنان که لازم است.  
+        </span>  
+      </div>  
+      <div class="w-4/5  flex items-center h-auto mt-5">  
+        <button  
+          class=" mx-auto bg-rose-500 mt-4  w-[134px] max-w-xs h-10 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-rose-600 duration-300 font-DanaRegular text-xl text-white py-2 px-4 rounded-lg flex items-center justify-center"  
+        >  
+          <a href="./media/Jobinja-BL-2899264.pdf" class="text-sm">دانلود رزومه</a>  
+          <svg  
+            class="fill-current w-3 h-3 mr-2"  
+            xmlns="http://www.w3.org/2000/svg"  
+            viewBox="0 0 20 20"  
+          >  
+            <path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z" />  
+          </svg>  
+        </button>  
+      </div>  
+    </div>
+    <!--end title-->
+    <div class="flex w-full h-auto mt-20 md:mt-80">
+      <div class="w-full max-w-6xl mx-auto flex flex-col md:flex-row">
+        <!-- بخش تصویر -->
+        <div class="w-full md:w-[50%] h-auto flex justify-center md:justify-start">
+          <div class="border-[16px] rounded-xl border-gray-300 h-auto w-[90%] max-w-[446px]">
+            <img src="./media/1.png" alt="عکس علی امیدی" class="rounded-lg w-full h-full object-cover">
+          </div>
+        </div>
+    
+        <!-- بخش متن -->
+        <div class=" p-6 sm:p-6  md w-full  md:w-[50%] max-w-[665px] h-auto  md:mt-28 md:ml-10 flex flex-col justify-center">
+          <h4 class="text-xl sm:text-2xl md:text-3xl font-DanaBold text-rose-500">علی امیدی</h4>
+          <h6 class="pt-2 sm:pt-3 font-DanaMedium text-base sm:text-lg md:text-xl">من یک برنامه نویس وب هستم</h6>
+          <p class="font-DanaRegular text-gray-400 pt-2 sm:pt-3 text-sm sm:text-base md:text-lg">
+            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، 
+          </p>
+          <div class="flex">
+            <button class="bg-rose-500 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-rose-600 duration-300 font-DanaRegular text-sm sm:text-base md:text-lg text-white mt-4 sm:mt-6 md:mt-8 py-2 px-4 rounded-lg inline-flex items-center">
+              <a href="#nemoone">نمونه کارها</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <section class="w-full h-auto pt-10 mx-auto">
+      <div class="w-full mx-auto h-auto">
+        <h4 class="font-DanaBold text-xl text-center">
+          علایق و سرگرمی ها
+        </h4>
+        <div class="border-2 w-20 h-1 mx-auto bg-red-500 border-rose-500 mt-2">
+        </div>
+      </div>
+    
+      <p class="text-gray-400 font-DanaRegular text-sm text-center mt-4 px-4">
+        <span class="block">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و</span>
+        <span class="block">متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</span>
+      </p>
+    </section>
+    
+    <div class="w-full h-auto  mt-7">
+      <div class="grid grid-cols-1  sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 w-[90%] h-auto mx-auto p-5">
+        <!-- کارت 1 -->
+        <div class="flex gap-5 rounded-md w-full h-[56px] bg-gray-100 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-white shadow-xl hover:shadow-zinc-400 duration-300">
+          <i class="fa-solid fa-chess-knight items-center pt-5 pr-5"></i>
+          <div class="h-[57px] border-[0.01px] border-black opacity-5"></div>
+          <h6 class="font-DanaMedium pt-5">
+            شطرنج
+          </h6>
+        </div>
+        <!-- کارت 2 -->
+        <div class="flex gap-5 rounded-md w-full h-[56px] bg-gray-100 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-white shadow-xl hover:shadow-zinc-400 duration-300">
+          <i class="fa-solid fa-book items-center pt-5 pr-5"></i>
+          <div class="h-[57px] border-[0.01px] border-black opacity-5"></div>
+          <h6 class="font-DanaMedium pt-5">
+            کتاب
+          </h6>
+        </div>
+        <!-- کارت 3 -->
+        <div class="flex gap-5 rounded-md w-full h-[56px] bg-gray-100 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-white shadow-xl hover:shadow-zinc-400 duration-300">
+          <i class="fa-solid fa-gamepad items-center pt-5 pr-5"></i>
+          <div class="h-[57px] border-[0.01px] border-black opacity-5"></div>
+          <h6 class="font-DanaMedium pt-5">
+            بازی های کامپیوتری
+          </h6>
+        </div>
+        <!-- کارت 4 -->
+        <div class="flex gap-5 rounded-md w-full h-[56px] bg-gray-100 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-white shadow-xl hover:shadow-zinc-400 duration-300">
+          <i class="fa-solid fa-tree items-center pt-5 pr-5"></i>
+          <div class="h-[57px] border-[0.01px] border-black opacity-5"></div>
+          <h6 class="font-DanaMedium pt-5">
+            طبیعت گردی
+          </h6>
+        </div>
+        <!-- کارت 5 -->
+        <div class="flex gap-5 rounded-md w-full h-[56px] bg-gray-100 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-white shadow-xl hover:shadow-zinc-400 duration-300">
+          <i class="fa-solid fa-film items-center pt-5 pr-5"></i>
+          <div class="h-[57px] border-[0.01px] border-black opacity-5"></div>
+          <h6 class="font-DanaMedium pt-5">
+            سینما
+          </h6>
+        </div>
+        <!-- کارت 6 -->
+        <div class="flex gap-5 rounded-md w-full h-[56px] bg-gray-100 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-white shadow-xl hover:shadow-zinc-400 duration-300">
+          <i class="fa-solid fa-paint-brush items-center pt-5 pr-5"></i>
+          <div class="h-[57px] border-[0.01px] border-black opacity-5"></div>
+          <h6 class="font-DanaMedium pt-5">
+            نقاشی
+          </h6>
+        </div>
+        <!-- کارت 7 -->
+        <div class="flex gap-5 rounded-md w-full h-[56px] bg-gray-100 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-white shadow-xl hover:shadow-zinc-400 duration-300">
+          <i class="fa-solid fa-film items-center pt-5 pr-5"></i>
+          <div class="h-[57px] border-[0.01px] border-black opacity-5"></div>
+          <h6 class="font-DanaMedium pt-5">
+            فیلم
+          </h6>
+        </div>
+        <!-- کارت 8 -->
+        <div class="flex gap-5 rounded-md w-full h-[56px] bg-gray-100 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-white shadow-xl hover:shadow-zinc-400 duration-300">
+          <i class="fa-solid fa-music items-center pt-5 pr-5"></i>
+          <div class="h-[57px] border-[0.01px] border-black opacity-5"></div>
+          <h6 class="font-DanaMedium pt-5">
+            موسیقی
+          </h6>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="w-full mb-10 mt-10 max-w-screen-xl mx-auto bg-[url('/media/bg-counter.jpg')] bg-no-repeat bg-cover rounded-xl flex flex-wrap justify-center p-4">
+      <!-- آمار 1 -->
+      <div class="flex flex-col items-center justify-center  text-white rounded-xl w-full sm:w-1/2 md:w-1/4 p-4 my-2">
+        <div class="w-12 h-12 mb-2">
+          <i class="text-red-500 flex mx-auto text-3xl fa fa-graduation-cap"></i>
+        </div>
+        <h3 class="text-4xl font-DanaMedium">3000</h3>
+        <p class="text-xl font-DanaRegular mt-2 text-center">ساعت تدریس</p>
+      </div>
+      <!-- آمار 2 -->
+      <div class="flex flex-col items-center justify-center  text-white rounded-xl w-full sm:w-1/2 md:w-1/4 p-4 my-2">
+        <div class="w-12 h-12 mb-2">
+          <i class="text-red-500 flex mx-auto text-3xl fa fa-pencil"></i>
+        </div>
+        <h3 class="text-4xl font-DanaMedium">250</h3>
+        <p class="text-xl font-DanaRegular mt-2 text-center">مقاله</p>
+      </div>
+      <!-- آمار 3 -->
+      <div class="flex flex-col items-center justify-center  text-white rounded-xl w-full sm:w-1/2 md:w-1/4 p-4 my-2">
+        <div class="w-12 h-12 mb-2">
+          <i class="text-red-500 flex mx-auto text-3xl fa fa-user"></i>
+        </div>
+        <h3 class="text-4xl font-DanaMedium">10</h3>
+        <p class="text-xl font-DanaRegular mt-2 text-center">مشتری خوشحال</p>
+      </div>
+      <!-- آمار 4 -->
+      <div class="flex flex-col items-center justify-center  text-white rounded-xl w-full sm:w-1/2 md:w-1/4 p-4 my-2">
+        <div class="w-12 h-12 mb-2">
+          <i class="text-red-500 flex mx-auto text-3xl fa fa-check"></i>
+        </div>
+        <h3 class="text-4xl font-DanaMedium">10</h3>
+        <p class="text-xl font-DanaRegular mt-2 text-center">پروژه</p>
+      </div>
+    </div>
+    
+    <div class="w-full h-[1450px] ">
+      <section id="khadamat" class="w-full h-auto pt-10 mx-auto">
+        <div class="w-full mx-auto h-auto">
+          <h4 class="font-DanaBold text-xl text-center">
+            خدمات من
+          </h4>
+          <div class="border-2 w-20 h-1 mx-auto bg-red-500 border-rose-500 mt-2">
+          </div>
+        </div>
+        <p class="text-gray-400 font-DanaRegular text-lg text-center mt-4 px-4">
+          <span class="block">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و</span>
+          <span class="block">متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</span>
+        </p>
+      </section>
+      
+      <div class="w-full h-auto mt-10 mx-auto px-4">
+        <div class="flex flex-wrap justify-center gap-6">
+          <!-- اولین بلوک -->
+          <div class="flex flex-col items-center gap-5 rounded-md w-full sm:w-1/2 md:w-1/3 lg:w-1/4 h-auto border border-gray-200 bg-gray-100 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-white shadow-xl hover:shadow-zinc-400 duration-300">
+            <i class="fa fa-book text-red-500 text-4xl pt-10"></i>
+            <h5 class="font-DanaMedium text-xl text-center pt-7">آموزش برنامه نویسی</h5>
+            <p class="text-gray-400 font-DanaRegular text-center px-4">
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+            </p>
+          </div>
+      
+          <!-- دومین بلوک -->
+          <div class="flex flex-col items-center gap-5 rounded-md w-full sm:w-1/2 md:w-1/3 lg:w-1/4 h-auto border border-gray-200 bg-gray-100 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-white shadow-xl hover:shadow-zinc-400 duration-300">
+            <i class="fa fa-laptop text-red-500 text-4xl pt-10"></i>
+            <h5 class="font-DanaMedium text-xl text-center pt-7">طراحی وب سایت</h5>
+            <p class="text-gray-400 font-DanaRegular text-center px-4">
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+            </p>
+          </div>
+      
+          <!-- سومین بلوک -->
+          <div class="flex flex-col items-center gap-5 rounded-md w-full sm:w-1/2 md:w-1/3 lg:w-1/4 h-auto border border-gray-200 bg-gray-100 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-white shadow-xl hover:shadow-zinc-400 duration-300">
+            <i class="fa fa-mobile text-red-500 text-4xl pt-10"></i>
+            <h5 class="font-DanaMedium text-xl text-center pt-7">برنامه نویسی موبایل</h5>
+            <p class="text-gray-400 font-DanaRegular text-center px-4">
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+            </p>
+          </div>
+        </div>
+      
+        <div class="flex flex-wrap justify-center gap-6 mt-10">
+          <!-- چهارمین بلوک -->
+          <div class="flex flex-col items-center gap-5 rounded-md w-full sm:w-1/2 md:w-1/3 lg:w-1/4 h-auto border border-gray-200 bg-gray-100 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-white shadow-xl hover:shadow-zinc-400 duration-300">
+            <i class="fa fa-magic text-red-500 text-4xl pt-10"></i>
+            <h5 class="font-DanaMedium text-xl text-center pt-7">طراحی رابط کاربری</h5>
+            <p class="text-gray-400 font-DanaRegular text-center px-4">
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+            </p>
+          </div>
+      
+          <!-- پنجمین بلوک -->
+          <div class="flex flex-col items-center gap-5 rounded-md w-full sm:w-1/2 md:w-1/3 lg:w-1/4 h-auto border border-gray-200 bg-gray-100 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-white shadow-xl hover:shadow-zinc-400 duration-300">
+            <i class="fa fa-graduation-cap text-red-500 text-4xl pt-10"></i>
+            <h5 class="font-DanaMedium text-xl text-center pt-7">تدریس خصوصی</h5>
+            <p class="text-gray-400 font-DanaRegular text-center px-4">
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+            </p>
+          </div>
+      
+          <!-- ششمین بلوک -->
+          <div class="flex flex-col items-center gap-5 rounded-md w-full sm:w-1/2 md:w-1/3 lg:w-1/4 h-auto border border-gray-200 bg-gray-100 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-white shadow-xl hover:shadow-zinc-400 duration-300">
+            <i class="fa fa-camera text-red-500 text-4xl pt-10"></i>
+            <h5 class="font-DanaMedium text-xl text-center pt-7">عکاس صنعتی</h5>
+            <p class="text-gray-400 font-DanaRegular text-center px-4">
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+            </p>
+          </div>
+        </div>
+      </div>
+      
+      
+      
+      <div id="rezome" class="w-full h-auto py-8">
+        <section class="w-full pt-16 mx-auto text-center">
+          <!-- عنوان -->
+          <div class="w-full max-w-3xl mx-auto mb-8">
+            <h4 class="font-DanaBold text-xl text-center">
+              رزومه
+            </h4>
+            <div class="border-2 w-20 h-1 mx-auto bg-red-500 border-rose-500 mt-2"></div>
+          </div>
+      
+          <!-- توضیحات -->
+          <p class="text-gray-400 font-DanaRegular mx-4 md:mx-12 lg:mx-24">
+            <span class="block md:inline">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و</span>
+            <span class="block md:inline">متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</span>
+          </p>
+        </section>
+      </div>
+      <div class="w-full  flex flex-col lg:flex-row items-start gap-6 mt-7 px-4 lg:px-8">
+
+        <!-- بخش سمت چپ -->
+        <div class="w-full lg:w-1/2 flex flex-col gap-6">
+          <!-- اولین بخش اطلاعات -->
+          <div class="w-full flex flex-col lg:flex-row gap-4 lg:gap-6">
+            <div class="flex-1 max-w-md rounded-lg border border-gray-200 p-4 transition-transform duration-300 hover:-translate-y-1 hover:scale-105 hover:bg-white shadow-lg hover:shadow-zinc-400">
+              <p class="font-DanaBold text-lg lg:text-xl hover:text-rose-500">برنامه نویس</p>
+              <p class="font-DanaMedium pt-2">شرکت خوارزمی</p>
+              <p class="text-base lg:text-lg text-gray-500 pt-3 font-DanaMedium">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+              </p>
+            </div>
+            <div class="w-36 h-11 rounded-lg border border-gray-200 flex justify-center items-center text-xl font-DanaRegular">
+              <p>1394 - 1392</p>
+            </div>
+          </div>
+      
+          <!-- دومین بخش اطلاعات -->
+          <div class="w-full flex flex-col lg:flex-row gap-4 lg:gap-6">
+            <div class="flex-1 max-w-md rounded-lg border border-gray-200 p-4 transition-transform duration-300 hover:-translate-y-1 hover:scale-105 hover:bg-white shadow-lg hover:shadow-zinc-400">
+              <p class="font-DanaBold text-lg lg:text-xl hover:text-rose-500">برنامه نویس</p>
+              <p class="font-DanaMedium pt-2">شرکت خوارزمی</p>
+              <p class="text-base lg:text-lg text-gray-500 pt-3 font-DanaMedium">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+              </p>
+            </div>
+            <div class="w-36 h-11 rounded-lg border border-gray-200 flex justify-center items-center text-xl font-DanaRegular">
+              <p>1399 - 1396</p>
+            </div>
+          </div>
+        </div>
+      
+        <!-- بخش نقطه گذاری -->
+        <div class="hidden lg:flex flex-col items-center w-12 lg:w-16 bg-white">
+          <div class="w-12 h-12 rounded-full border-2 border-gray-200 flex items-center justify-center mb-6">
+            <i class="fa fa-star text-gray-500"></i>
+          </div>
+          <div class="w-1 h-auto bg-gray-200 flex flex-col gap-12 items-center py-6">
+            <div class="w-3 h-3 rounded-full border-2 border-black"></div>
+            <div class="w-3 h-3 rounded-full border-2 border-black"></div>
+            <div class="w-3 h-3 rounded-full border-2 border-black"></div>
+            <div class="w-3 h-3 rounded-full border-2 border-black"></div>
+          </div>
+        </div>
+      
+        <!-- بخش سمت راست -->
+        <div class="w-full lg:w-1/2 flex flex-col gap-6 lg:gap-12">
+          <div class="w-full flex flex-col lg:flex-row gap-4 lg:gap-6">
+            <div class="w-36 h-11 rounded-lg border border-gray-200 flex justify-center items-center text-xl font-DanaRegular">
+              <p class="shadow-xl">1392 - 1390</p>
+            </div>
+            <div class="flex-1 max-w-md rounded-lg border border-gray-200 p-4 transition-transform duration-300 hover:-translate-y-1 hover:scale-105 hover:bg-white shadow-lg hover:shadow-zinc-400">
+              <p class="font-DanaBold text-lg lg:text-xl hover:text-rose-500">برنامه نویس</p>
+              <p class="font-DanaMedium pt-2">شرکت خوارزمی</p>
+              <p class="text-base lg:text-lg text-gray-500 pt-3 font-DanaMedium">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+              </p>
+            </div>
+          </div>
+      
+          <div class="w-full flex flex-col lg:flex-row gap-4 lg:gap-6">
+            <div class="w-36 h-11 rounded-lg border border-gray-200 flex justify-center items-center text-xl font-DanaRegular">
+              <p class="shadow-xl">1396 - 1394</p>
+            </div>
+            <div class="flex-1 max-w-md rounded-lg border border-gray-200 p-4 transition-transform duration-300 hover:-translate-y-1 hover:scale-105 hover:bg-white shadow-lg hover:shadow-zinc-400">
+              <p class="font-DanaBold text-lg lg:text-xl hover:text-rose-500">برنامه نویس</p>
+              <p class="font-DanaMedium pt-2">شرکت خوارزمی</p>
+              <p class="text-base lg:text-lg text-gray-500 pt-3 font-DanaMedium">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+        </div>
+    </div>
+    <div class="w-full h-auto md:mt-1 mt-[1600px] ">
+      <section class="w-full h-auto pt-10 mx-auto px-4">
+        <div class="w-full max-w-screen-lg mx-auto h-auto">
+          <h4 class="font-DanaBold text-xl text-center">
+            مهارت ها
+          </h4>
+          <div class="border-2 border-red-500 w-40 h-1 mx-auto bg-red-500 my-4"></div>
+        </div>
+        <p class="text-gray-400 text-center mx-auto px-4 md:px-0 md:mx-0 font-DanaRegular">
+          <span class="block md:inline">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و</span>
+          <br class="md:hidden">
+          <span class="block md:inline">متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</span>
+        </p>
+      </section>
+      
+      <div class="w-full max-w-screen-lg  mx-auto mt-10 px-4 py-6">
+        <div class="w-full flex flex-col md:flex-row gap-6">
+          <div class="w-full flex justify-between items-center">
+            <h6 class="font-DanaRegular text-lg">طراحی رابط کاربری</h6>
+            <p class="font-DanaMedium">99%</p>
+          </div>
+          <div class="w-full h-2 bg-slate-300 rounded-lg">
+            <div class="w-[98%] h-2 bg-rose-500 rounded-lg"></div>
+          </div>
+          <br>
+          <div class="w-full flex justify-between items-center">
+            <h6 class="font-DanaRegular">طراحی وب سایت</h6>
+            <p class="font-DanaMedium">85%</p>
+          </div>
+          <div class="w-full h-2 bg-slate-300 rounded-lg">
+            <div class="w-[80%] h-2 bg-rose-500 rounded-lg"></div>
+          </div>
+          <br>
+          <div class="w-full flex justify-between items-center">
+            <h6 class="font-DanaRegular">اپلیکیشن موبایل</h6>
+            <p class="font-DanaMedium">70%</p>
+          </div>
+          <div class="w-full h-2 bg-slate-300 rounded-lg">
+            <div class="w-[63%] h-2 bg-rose-500 rounded-lg"></div>
+          </div>
+          <br>
+          <div class="w-full flex justify-between items-center">
+            <h6 class="font-DanaRegular">قالب وردپرس</h6>
+            <p class="font-DanaMedium">75%</p>
+          </div>
+          <div class="w-full h-2 bg-slate-300 rounded-lg">
+            <div class="w-[78%] h-2 bg-rose-500 rounded-lg"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    <div id="nemoone" class="w-full mt-8 bg-slate-50">
+      <section class="w-full pt-10 mx-auto text-center">
+        <div class="w-full max-w-4xl mx-auto">
+          <h4 class="font-DanaBold text-xl text-center">
+            نمونه کارها
+          </h4>
+          <div class="border-2 border-red-500 w-40 h-1 mx-auto bg-red-500 my-4"></div>
+        </div>
+        <p class="text-gray-400 font-DanaRegular mt-4 px-4 md:px-16 lg:px-24">
+          <span class="block md:inline-block">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و</span>
+          <span class="block md:inline-block">متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</span>
+        </p>
+      </section>
+    
+      <div class="w-full max-w-7xl mx-auto mt-16 px-4">
+        <div class="flex flex-wrap gap-4 justify-center">
+          <ul class="flex flex-wrap gap-4 md:gap-8 justify-center items-center">
+            <li class="flex w-full md:w-32 h-10 mt-2 rounded-md transition ease-in-out delay-100 hover:bg-red-500 duration-300">
+              <a class="flex w-full h-full text-lg font-DanaRegular text-gray-400 hover:text-white transition ease-in-out delay-100 duration-300 items-center justify-center" href="#">
+                همه
+              </a>
+            </li>
+            <li class="flex w-full md:w-32 h-10 mt-2 rounded-md transition ease-in-out delay-100 hover:bg-red-500 duration-300">
+              <a class="flex w-full h-full text-lg font-DanaRegular text-gray-400 hover:text-white transition ease-in-out delay-100 duration-300 items-center justify-center" href="#">
+                طراحی وب
+              </a>
+            </li>
+            <li class="flex w-full md:w-32 h-10 mt-2 rounded-md transition ease-in-out delay-100 hover:bg-red-500 duration-300">
+              <a class="flex w-full h-full text-lg font-DanaRegular text-gray-400 hover:text-white transition ease-in-out delay-100 duration-300 items-center justify-center" href="#">
+                اپلیکیشن موبایل
+              </a>
+            </li>
+            <li class="flex w-full md:w-32 h-10 mt-2 rounded-md transition ease-in-out delay-100 hover:bg-red-500 duration-300">
+              <a class="flex w-full h-full text-lg font-DanaRegular text-gray-400 hover:text-white transition ease-in-out delay-100 duration-300 items-center justify-center" href="#">
+                قالب وردپرس
+              </a>
+            </li>
+            <li class="flex w-full md:w-32 h-10 mt-2 rounded-md transition ease-in-out delay-100 hover:bg-red-500 duration-300">
+              <a class="flex w-full h-full text-lg font-DanaRegular text-gray-400 hover:text-white transition ease-in-out delay-100 duration-300 items-center justify-center" href="#">
+                سئو
+              </a>
+            </li>
+            <li class="flex w-full md:w-32 h-10 mt-2 rounded-md transition ease-in-out delay-100 hover:bg-red-500 duration-300">
+              <a class="flex w-full h-full text-lg font-DanaRegular text-gray-400 hover:text-white transition ease-in-out delay-100 duration-300 items-center justify-center" href="#">
+                مارکتینگ
+              </a>
+            </li>
+          </ul>
+        </div>
+    
+        <div class="w-full mt-16 bg-sky-600-50">
+          <div class="flex flex-wrap gap-6 justify-center px-4">
+            <div class="rounded-md border border-gray-200 bg-gray-100 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-white shadow-xl hover:shadow-zinc-400 duration-300 w-full max-w-sm">
+              <div class="w-full h-60">
+                <img class="object-cover w-full h-full" src="./media/r1.jpg" alt="نمونه کار اول">
+              </div>
+              <h5 class="font-DanaBold text-xl text-blue-500 text-center mt-4">
+                نمونه کار اول
+              </h5>
+              <p class="text-xl font-DanaRegular text-center mt-2">
+                طراحی وب
+              </p>
+            </div>
+    
+            <div class="rounded-md border border-gray-200 bg-gray-100 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-white shadow-xl hover:shadow-zinc-400 duration-300 w-full max-w-sm">
+              <div class="w-full h-60">
+                <img class="object-cover w-full h-full" src="./media/r2.jpg" alt="نمونه کار دوم">
+              </div>
+              <h5 class="font-DanaBold text-xl text-blue-500 text-center mt-4">
+                نمونه کار دوم
+              </h5>
+              <p class="text-xl font-DanaRegular text-center mt-2">
+                طراحی اپلیکیشن موبایل
+              </p>
+            </div>
+    
+            <div class="rounded-md border border-gray-200 bg-gray-100 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-white shadow-xl hover:shadow-zinc-400 duration-300 w-full max-w-sm">
+              <div class="w-full h-60">
+                <img class="object-cover w-full h-full" src="./media/r3.jpg" alt="نمونه کار سوم">
+              </div>
+              <h5 class="font-DanaBold text-xl text-blue-500 text-center mt-4">
+                نمونه کار سوم
+              </h5>
+              <p class="text-xl font-DanaRegular text-center mt-2">
+                قالب وردپرس
+              </p>
+            </div>
+    
+            <div class="rounded-md border border-gray-200 bg-gray-100 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-white shadow-xl hover:shadow-zinc-400 duration-300 w-full max-w-sm">
+              <div class="w-full h-60">
+                <img class="object-cover w-full h-full" src="./media/r4.jpg" alt="نمونه کار چهارم">
+              </div>
+              <h5 class="font-DanaBold text-xl text-blue-500 text-center mt-4">
+                نمونه کار چهارم
+              </h5>
+              <p class="text-xl font-DanaRegular text-center mt-2">
+                سئو
+              </p>
+            </div>
+    
+            <div class="rounded-md border border-gray-200 bg-gray-100 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-white shadow-xl hover:shadow-zinc-400 duration-300 w-full max-w-sm">
+              <div class="w-full h-60">
+                <img class="object-cover w-full h-full" src="./media/r5.jpg" alt="نمونه کار پنجم">
+              </div>
+              <h5 class="font-DanaBold text-xl text-blue-500 text-center mt-4">
+                نمونه کار پنجم
+              </h5>
+              <p class="text-xl font-DanaRegular text-center mt-2">
+                طراحی وب
+              </p>
+            </div>
+    
+            <div class="rounded-md border border-gray-200 bg-gray-100 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-white shadow-xl hover:shadow-zinc-400 duration-300 w-full max-w-sm">
+              <div class="w-full h-60">
+                <img class="object-cover w-full h-full" src="./media/r6.jpg" alt="نمونه کار ششم">
+              </div>
+              <h5 class="font-DanaBold text-xl text-blue-500 text-center mt-4">
+                نمونه کار ششم
+              </h5>
+              <p class="text-xl font-DanaRegular text-center mt-2">
+                دیجیتال مارکتینگ
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <div id="tamas" class="w-full mt-20 mx-auto px-4">
+      <section class="w-full h-[138px] pt-32 mx-auto text-center">
+        <div class="w-full max-w-screen-lg mx-auto h-[84px]">
+          <h4 class="font-DanaBold text-xl">
+            تماس با من
+          </h4>
+          <div class="border-2 w-40 h-1 mx-auto bg-red-500 border-rose-500 mt-2"></div>
+        </div>
+        <p class="text-gray-400 font-DanaRegular mt-4">
+          <span class="block md:inline-block md:mr-16">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و</span>
+          <br>
+          <span class="block md:inline-block">متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</span>
+        </p>
+      </section>
+      <div class="flex flex-wrap mx-auto mt-48 sm:mt-80 w-full max-w-screen-xl ">
+        <div class="flex flex-col items-center w-full sm:w-1/3 h-[150px] p-4 rounded-lg ">
+          <i class="fa-solid fa-envelope-open text-4xl text-rose-500 mb-2"></i>
+          <h5 class="font-DanaBold text-lg">ایمیل</h5>
+          <p class="text-xl text-rose-500 font-DanaRegular">en.aliomidi@gmail.com</p>
+        </div>
+        <div class="flex flex-col items-center w-full sm:w-1/3 h-[150px] p-4 rounded-lg ">
+          <i class="fa-solid fa-map-marker-alt text-4xl text-rose-500 mb-2"></i>
+          <h5 class="font-DanaBold text-lg">آدرس</h5>
+          <p class="text-xl text-rose-500 font-DanaRegular">تهران خیابان کاشانی</p>
+        </div>
+        <div class="flex flex-col items-center w-full sm:w-1/3 h-[150px]  p-4 rounded-lg ">
+          <i class="fa-solid fa-phone-square text-4xl text-rose-500 mb-2"></i>
+          <h5 class="font-DanaBold text-lg">تلفن</h5>
+          <p class="text-xl text-rose-500 font-DanaRegular">09129569641</p>
+        </div>
+      </div>
+      <div class="mx-auto h-[250px] gap-7 w-full max-w-screen-lg mt-12 flex flex-wrap">
+        <div class="w-full sm:w-1/2 h-56 flex flex-col gap-4">
+          <div class="w-full h-10 pr-3 border-[1px] border-gray-200 rounded-lg flex items-center">
+            <h1 class="text-gray-500 font-DanaRegular">نام و نام خانوادگی</h1>
+          </div>
+          <div class="w-full h-10 pr-3 border-[1px] border-gray-200 rounded-lg flex items-center">
+            <h1 class="text-gray-500 font-DanaRegular">ایمیل</h1>
+          </div>
+          <div class="w-full h-10 pr-3 border-[1px] border-gray-200 rounded-lg flex items-center">
+            <h1 class="text-gray-500 font-DanaRegular">موضوع</h1>
+          </div>
+        </div>
+        <div class="w-full sm:w-1/2 h-[180px] border-[1px] border-gray-200 rounded-lg relative">
+          <h1 class="p-3 font-DanaRegular text-gray-500">
+            متن پیغام ...
+          </h1>
+          <div class="absolute bottom-3 left-3">
+            <button class="bg-rose-500 w-[134px] h-10 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-rose-600 duration-300 font-DanaRegular text-xl text-white rounded-lg inline-flex items-center">
+              <span class="text-sm mx-auto">ارسال پیغام</span>
+            </button>
+          </div>
+        </div>
+        
+      </div>
+      
+    </div>
+    <footer class="bg-gray-800 mt-60 text-white py-6">
+      <div class="container mx-auto text-center">
+        <p class="text-sm font-DanaRegular">© کلیه حقوق محفوظ و متعلق به en.aliomidi@gmail.com می باشد.</p>
+      </div>
+    </footer>
+    
+
+
+
+
+  <!-- جاوا اسکریپت برای باز و بسته کردن منوی موبایل -->
+<script>
+  const menuToggle = document.getElementById('menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  menuToggle.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+</script>  
+    <script src="./fontawesome-free-6.6.0-web/fontawesome-free-6.6.0-web/js/all.min.js"></script>
+  </body>
+</html>
